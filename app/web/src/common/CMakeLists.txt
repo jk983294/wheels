@@ -1,0 +1,5 @@
+file(GLOB WebCommonSrc "*.cpp")
+add_library(webcommon STATIC ${WebCommonSrc})
+target_link_libraries(webcommon)
+set_property(TARGET webcommon PROPERTY POSITION_INDEPENDENT_CODE ON)
+install(TARGETS webcommon LIBRARY DESTINATION lib)
