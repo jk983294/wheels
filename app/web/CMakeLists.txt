@@ -6,8 +6,6 @@ set(CMAKE_CXX_STANDARD 17)
 #SET(CMAKE_CXX_FLAGS "-std=c++17 -O3 -s -Wall -Werror")
 SET(CMAKE_CXX_FLAGS "-std=c++17 -g -Wall -Werror")
 
-FIND_PACKAGE(pugixml)
-
 include_directories(SYSTEM /opt/3rd/common/include)
 include_directories(SYSTEM /opt/version/latest/frenzy/include)
 include_directories(/opt/version/latest/zergbase/include)

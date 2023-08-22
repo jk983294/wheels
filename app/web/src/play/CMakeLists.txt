@@ -6,5 +6,5 @@ foreach (sourcefile ${APP_SOURCES})
 
     message("source files: " ${sourcefile} " executable: " ${executablename})
     add_executable(${executablename} ${sourcefile})
-    target_link_libraries(${executablename} webcommon pugixml curl ssl crypto pthread rt z dl)
+    target_link_libraries(${executablename} webcommon curl ssl crypto pthread rt z dl)
 endforeach (sourcefile ${APP_SOURCES})
